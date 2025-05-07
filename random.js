@@ -47,11 +47,15 @@ function getAppKey(){
 })(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r',getAppKey());
 s247r('setWaterfallsSamplingRate',1);
 s247r('userId',getRandomName());
-s247r('recordSession',{
-"trackEvents":true,
-"trackConsoleEvents":true,
-"captureAllWaterfalls":false,
-"maskAllInput":true,
-"maskAllText":true,
-"collectNetworkDetails":true
- });
+const allowedUrls = [
+            /.*/
+        ];
+s247r('recordSession',{//No I18N
+    "trackEvents":true,//No I18N
+    "trackConsoleEvents":true,//No I18N
+    "captureAllWaterfalls":false,//No I18N
+    "maskAllInput":true,//No I18N
+    "maskAllText":true,//No I18N
+    "collectNetworkDetails":true,//No I18N
+    "allowedNetworkUrls": allowedUrls//No I18N
+});
