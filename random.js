@@ -59,7 +59,7 @@ s247r('recordSession',{//No I18N
     "recordingSamplingRate": 1,
     "trackEvents":true,//No I18N
     "trackConsoleEvents":true,//No I18N
-    "captureAllWaterfalls":false,//No I18N
+    "captureAllWaterfalls":true,//No I18N
     "maskAllInput":true,//No I18N
     "maskAllText":true,//No I18N
     "collectNetworkDetails":true,//No I18N
