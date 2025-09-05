@@ -18,6 +18,10 @@ function getRandomName() {
     sessionStorage.setItem('randomName', randomFirstName+' '+randomLastName);
     return `${randomFirstName} ${randomLastName}`;
   }
+const now = new Date();
+const currentTime = now.toLocaleTimeString();
+console.log(randomName+" still in session Time:", currentTime);
+	
   return randomName;
   
 }
